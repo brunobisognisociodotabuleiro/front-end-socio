@@ -1,39 +1,21 @@
-import React , { useEffect ,useState } from 'react'
+import React from "react"
 
-export default function Header() {
-  const [isScrolled, setIsScrooled] = React.useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0 ) {
-        setIsScrooled(true);
-      } else{
-        setIsScrooled(false);
-      }
-    }; 
-
-    window.addEventListener('scroll' , handleScroll); 
-    return () => {
-      window.removeEventListener('scroll' , handleScroll);
-    };
-  } , []);
+export default function Header(){
   return (
-    <header className='fixed top-0 z-50 flex w-full items-center justify-between transition-all px-4 py-4 lg:px-10 lg:py-6'>
-      <div className='flex items-center space-x-2 md:space-x-8'>
-        <img src='/logo_socio.svg' alt='logo socio' width={80} height={80} />
-        <ul className='hidden md:flex md:space-x-4'>
-          <li>Cadastre seu acervo</li>
-          <li>Aluguel um jogo</li>
+      <header className="fixed top-10 z-50 flex w-full 
+      items-center justify-between px-4 py-4 lg:px-10 lg:py-10 transition-all">
+        <div className="flex items-center space-x-2 md:space-x-8">
+        <img src="/logo_socio.svg" alt="logo" width={100} height={100}/>
+        <ul className="hidden md:flex md:space-x-4">
           <li>Quem Somos</li>
+          <li>Seja Sócio</li>
+          <li>Alugue</li>
+          <li>Como Funciona</li>
           <li>Contato</li>
-          <li>Nosso Blog</li>
         </ul>
-      </div>
-      <div className='flex items-center md:space-x-4'>
-        <p className='hidden cursor-not-allowed lg:inline'>UserAvatar</p>
-        <img src='https://rb.gy/g1pwyx' alt=''className='cursor-pointer rounded' />
-      </div>
-    </header>
-  )
-}
-
+        </div>
+        <p className="hidden cursor-not-allowed lg:inline  px-4">Profile</p>
+        <img src="https://rb.gy/g1pwyx" alt="" className="cursor-pointer rounded"/>
+      </header>
+  );
+};
