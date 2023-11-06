@@ -1,7 +1,9 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
 import { space } from 'postcss/lib/list';
-import Header from '../components/Header'
+import Header from '../components/Header';
+import { InformationCircleIcon } from '@heroicons/react/24/solid';
+import { PlayIcon } from '@heroicons/react/24/solid';
 
 
 const inter = Inter({ subsets: ['latin'] });
@@ -24,30 +26,25 @@ export default function Home() {
           <h1 className='text-2xl font-bold md:text-4xl lg:text-7xl text-purple-800'>
             Alugue Já
           </h1>
-          <p className='text-shadow-md max-w-xs text-xs md:max-w-lg lg:max-w-2xl  text-purple-800'>
-
-          </p>
-
-
         </div>
-
-        <div className='flex space-x-2 '>
- 
-          <button className='
+        <div className='flex space-x-3 h-10'>
+      <button className='
       bg-fuchsia-800
       text-yellow-500
       md:flex-xl; flex cursor-pointer items-center gap-2 rounded bg-fuchia-800
-      px-5 py-1.5 text-sm font-semibold transition-opacity-75 md:px-8 md:py-2.5'>
-            Play</button>
-
-          <button className='
+      px-4 py-2 text-sm font-semibold transition-opacity-75 md:px-10 md:py-2.5'>
+      <PlayIcon className='h-6'/>
+      Play
+            </button>
+        <button className='
       bg-purple-800
       text-yellow-500
       md:flex-xl; flex cursor-pointer items-center gap-2 rounded bg-fuchia-800
       px-5 py-1.5 text-sm font-semibold transition-opacity-75 md:px-8 md:py-2.5'>
-            Saiba mais</button>
+      Saiba mais</button>
         </div>
       </main>
     </div>
-  )
+   
+  );
 }
