@@ -9,7 +9,7 @@ export default function Header() {
   const isScrolled = useScroll();
   return (
     <header className="fixed top-10 z-50 flex w-full 
-      items-center justify-between px-4 py-4 lg:px-10 lg:py-10 transition-all">
+      items-center justify-between px-4 py-4 lg:px-10 lg:py-16 transition-all">
         <div className="flex items-center space-x-2 md:space-x-8">
           <Logo/>
           <NavLinks/>
