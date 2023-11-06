@@ -34,6 +34,7 @@ export default function Home() {
       md:flex-xl; flex cursor-pointer items-center gap-2 rounded bg-fuchia-800
       px-4 py-2 text-sm font-semibold transition-opacity-75 md:px-10 md:py-2.5'>
       <PlayIcon className='h-6'/>
+      
       Play
             </button>
         <button className='
