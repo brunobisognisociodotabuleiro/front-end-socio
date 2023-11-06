@@ -9,9 +9,9 @@ import { PlayIcon } from '@heroicons/react/24/solid';
 const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
-    <div className='relative h-screen overflow-hidden bg-gradient-to-b lg:h-[140vh]'>
+    <div className='relative h-screen overflow-hidden h-14 bg-gradient-to-r from-yellow-500 to-yellow-600 lg:h-[140vh]'>
       <Header />
-      <main className='relative pb-24 pl-4 lg:space-y-24 lg:pl-16'>
+      <main className='relative pb-24 pl-4 lg:pl-16'>
         <div className='flex flex-col py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg-pb-12'>
           <div className='absolute left-0 top-0 -z-10 flex flex-col h-[95vh] w-screen bg-yellow-500'>
             {/*
@@ -23,7 +23,7 @@ export default function Home() {
 */}
           </div>
 
-          <h1 className='text-2xl font-bold md:text-4xl lg:text-7xl text-purple-800'>
+          <h1 className='text-2xl font-bold md:text-2xl lg:text-7xl text-purple-800'>
             Alugue Já
           </h1>
         </div>
@@ -49,7 +49,7 @@ export default function Home() {
               {[].map((index) => (
                 <div key={index} className='h-28 min-w-[200px]'>
                   <Image
-                    src='/1-5.png'
+                    src='/1.jpg'
                     alt='banner image'
                     fill={true}
                     className='rounded' />
